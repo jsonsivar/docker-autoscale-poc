@@ -1,0 +1,23 @@
+{
+  "name": "docker-autoscale-poc",
+  "version": "1.0.0",
+  "description": "test prj for docker ebs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsonsivar/docker-autoscale-poc.git"
+  },
+  "author": "jsonsivar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsonsivar/docker-autoscale-poc/issues"
+  },
+  "homepage": "https://github.com/jsonsivar/docker-autoscale-poc#readme",
+  "dependencies": {
+    "koa": "^2.5.0"
+  }
+}

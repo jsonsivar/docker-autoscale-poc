@@ -1,0 +1,16 @@
+version: '2'
+services:
+    app:
+        build: .
+        ports: 
+            - "$PORT:3000" #open required ports here
+        depends_on:
+            - mongo
+        environment: 
+            - DATABASE_URL=mongodb://mongo/db
+            - NODE_ENV=production
+        restart: always
+    # Required services
+    mongo:
+        image: mongo:3.6
+        restart: always
